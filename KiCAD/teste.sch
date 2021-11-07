@@ -1,0 +1,597 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L prog_tang:PN532-SPI Sensor1
+U 1 1 613DA098
+P 2600 1300
+F 0 "Sensor1" H 2258 1915 50  0000 C CNN
+F 1 "PN532-SPI" H 2258 1824 50  0000 C CNN
+F 2 "" H 2250 600 50  0001 C CNN
+F 3 "" H 2250 600 50  0001 C CNN
+	1    2600 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_tang:PN532-SPI Sensor2
+U 1 1 61414446
+P 2600 2650
+F 0 "Sensor2" H 2258 3265 50  0000 C CNN
+F 1 "PN532-SPI" H 2258 3174 50  0000 C CNN
+F 2 "" H 2250 1950 50  0001 C CNN
+F 3 "" H 2250 1950 50  0001 C CNN
+	1    2600 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_tang:PN532-SPI Sensor3
+U 1 1 6141670B
+P 2600 4050
+F 0 "Sensor3" H 2258 4665 50  0000 C CNN
+F 1 "PN532-SPI" H 2258 4574 50  0000 C CNN
+F 2 "" H 2250 3350 50  0001 C CNN
+F 3 "" H 2250 3350 50  0001 C CNN
+	1    2600 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_tang:PN532-SPI Sensor4
+U 1 1 61417822
+P 2600 5400
+F 0 "Sensor4" H 2258 6015 50  0000 C CNN
+F 1 "PN532-SPI" H 2258 5924 50  0000 C CNN
+F 2 "" H 2250 4700 50  0001 C CNN
+F 3 "" H 2250 4700 50  0001 C CNN
+	1    2600 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 1350 5600 1350
+Wire Wire Line
+	7700 3050 7950 3050
+Wire Wire Line
+	7800 2950 7700 2950
+Wire Wire Line
+	7700 1850 7250 1850
+$Comp
+L Device:Buzzer Buzzer1
+U 1 1 6140D8F4
+P 7150 4450
+F 0 "Buzzer1" H 7302 4479 50  0000 L CNN
+F 1 "Buzzer" H 7302 4388 50  0000 L CNN
+F 2 "Buzzer_Beeper:Buzzer_D14mm_H7mm_P10mm" V 7125 4550 50  0001 C CNN
+F 3 "~" V 7125 4550 50  0001 C CNN
+	1    7150 4450
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 3E1
+U 1 1 613B6179
+P 4650 3750
+F 0 "3E1" H 4730 3742 50  0001 L CNN
+F 1 "Conn_01x08" H 4730 3651 50  0001 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 4650 3750 50  0001 C CNN
+F 3 "~" H 4650 3750 50  0001 C CNN
+	1    4650 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L prog_tang:DisplayI2C U1
+U 1 1 6142E6EC
+P 6700 2600
+F 0 "U1" V 6479 3978 50  0000 L CNN
+F 1 "DisplayI2C" V 6570 3978 50  0000 L CNN
+F 2 "" H 6550 3400 50  0001 C CNN
+F 3 "" H 6550 3400 50  0001 C CNN
+	1    6700 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 6950 2750
+Wire Wire Line
+	7050 2750 7100 2750
+Wire Wire Line
+	6650 2750 6750 2750
+Wire Wire Line
+	6850 2750 6800 2750
+Wire Wire Line
+	6950 2750 6950 4100
+Wire Wire Line
+	6950 2750 6900 2300
+Wire Wire Line
+	7000 2300 7000 2350
+$Comp
+L Connector_Generic:Conn_01x04 Display1
+U 1 1 615A5718
+P 6800 2500
+F 0 "Display1" V 6672 2212 50  0000 R BNN
+F 1 "." V 6763 2212 50  0000 R CNN
+F 2 "Connector_PinSocket_2.00mm:PinSocket_1x04_P2.00mm_Horizontal" H 6800 2500 50  0001 C CNN
+F 3 "~" H 6800 2500 50  0001 C CNN
+	1    6800 2500
+	0    -1   1    0   
+$EndComp
+Wire Wire Line
+	7050 2750 7050 4350
+Connection ~ 6750 2750
+Wire Wire Line
+	6750 4150 6750 2750
+Connection ~ 6850 2750
+Wire Wire Line
+	6850 2750 6850 4050
+Connection ~ 7050 2750
+Wire Wire Line
+	6750 2750 6700 2300
+Wire Wire Line
+	6850 2750 6800 2300
+Connection ~ 7000 2300
+Wire Wire Line
+	7000 2300 7050 2750
+Wire Wire Line
+	7000 2300 7050 2350
+Wire Wire Line
+	7000 2350 7050 2350
+Wire Wire Line
+	7000 1750 7000 2300
+Wire Wire Line
+	7700 2150 6100 2150
+Wire Wire Line
+	6850 4050 7700 4050
+Wire Wire Line
+	7700 4150 6750 4150
+Wire Wire Line
+	6600 4100 6950 4100
+Wire Wire Line
+	7000 1750 7700 1750
+Text Label 7550 2150 2    50   ~ 10
+10
+Text Label 7550 2050 2    50   ~ 10
+11
+Wire Wire Line
+	7700 2050 5700 2050
+$Comp
+L Connector_Generic:Conn_01x10 1D1
+U 1 1 613C0CE0
+P 7500 1950
+F 0 "1D1" H 7418 1225 50  0001 C CNN
+F 1 "Conn_01x10" H 7418 1316 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x10_P2.00mm_Vertical" H 7500 1950 50  0001 C CNN
+F 3 "~" H 7500 1950 50  0001 C CNN
+	1    7500 1950
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7700 1950 5700 1950
+Wire Wire Line
+	7700 2250 6150 2250
+Text Label 7550 1850 2    50   ~ 10
+13
+Text Label 7550 2350 2    50   ~ 10
+8
+Text Label 7550 2250 2    50   ~ 10
+9
+Text Label 7550 1950 2    50   ~ 10
+12
+Wire Wire Line
+	6150 2250 6150 2900
+Text GLabel 7700 2250 2    50   Input ~ 0
+SS-sensor1
+Text GLabel 7700 2150 2    50   Input ~ 0
+SS-sensor2
+Text GLabel 7700 2050 2    50   Input ~ 0
+SS-sensor3
+Text GLabel 7700 1950 2    50   Input ~ 0
+SS-sensor4
+Text GLabel 7800 1750 2    50   Input ~ 10
+GND
+Wire Wire Line
+	5800 1900 5800 2350
+$Comp
+L Connector_Generic:Conn_01x08 3D1
+U 1 1 613BF0F5
+P 7500 3750
+F 0 "3D1" H 7580 3742 50  0001 L CNN
+F 1 "Conn_01x08" H 7580 3651 50  0001 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 7500 3750 50  0001 C CNN
+F 3 "~" H 7500 3750 50  0001 C CNN
+	1    7500 3750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x08 2D1
+U 1 1 613FD4EF
+P 7500 2950
+F 0 "2D1" H 7418 2325 50  0001 C CNN
+F 1 "Conn_01x08" H 7418 2416 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 7500 2950 50  0001 C CNN
+F 3 "~" H 7500 2950 50  0001 C CNN
+	1    7500 2950
+	-1   0    0    1   
+$EndComp
+Text Label 7550 3250 2    50   ~ 10
+0
+Text Label 7550 3150 2    50   ~ 10
+1
+Text Label 7550 3050 2    50   ~ 10
+2
+Text Label 7550 2950 2    50   ~ 10
+3
+Text Label 7550 2850 2    50   ~ 10
+4
+Text Label 7550 2750 2    50   ~ 10
+5
+Text Label 7550 2650 2    50   ~ 10
+6
+Text Label 7550 2550 2    50   ~ 10
+7
+Text Label 7550 3450 2    50   ~ 10
+14
+Text Label 7550 3550 2    50   ~ 10
+15
+Text Label 7550 3650 2    50   ~ 10
+16
+Text Label 7550 3750 2    50   ~ 10
+17
+Text Label 7550 3850 2    50   ~ 10
+18
+Text Label 7550 3950 2    50   ~ 10
+19
+Text Label 7550 4050 2    50   ~ 10
+20
+Text Label 7550 4150 2    50   ~ 10
+21
+Text GLabel 8300 1950 1    50   Input ~ 10
+GND
+Wire Wire Line
+	5600 1350 5600 1900
+Wire Wire Line
+	5600 1750 5600 1900
+Wire Wire Line
+	5600 1900 5600 2350
+Connection ~ 5600 1900
+Connection ~ 5600 2800
+Connection ~ 5600 2350
+Wire Wire Line
+	5600 2350 5600 2800
+Wire Wire Line
+	5800 2800 5800 3200
+Connection ~ 5800 2800
+Wire Wire Line
+	5800 2350 5800 2800
+Wire Wire Line
+	6150 2900 5700 2900
+Wire Wire Line
+	6000 3050 6000 2800
+Connection ~ 5800 2350
+Connection ~ 5800 1900
+Wire Wire Line
+	5800 1650 5800 1900
+Connection ~ 6000 2800
+Wire Wire Line
+	6000 2350 6000 2800
+$Comp
+L Connector_Generic:Conn_01x06 Sensor6
+U 1 1 614B05ED
+P 5700 2150
+F 0 "Sensor6" V 5664 1762 50  0000 R CNN
+F 1 "Sensor 3" V 5573 1762 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Horizontal" H 5700 2150 50  0001 C CNN
+F 3 "~" H 5700 2150 50  0001 C CNN
+	1    5700 2150
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5500 2350 5500 2800
+Wire Wire Line
+	5900 2800 5900 2350
+Connection ~ 5500 2350
+Wire Wire Line
+	5500 1900 5500 2350
+Wire Wire Line
+	6000 1900 6000 2350
+Connection ~ 6000 2350
+Wire Wire Line
+	5900 1900 5900 2350
+Connection ~ 5900 2350
+Text GLabel 5500 1650 1    50   Input ~ 10
+GND
+Text GLabel 5800 1650 1    50   Input ~ 0
+MOSI
+Text GLabel 5900 1650 1    50   Input ~ 0
+MISO
+Connection ~ 5900 2800
+Wire Wire Line
+	5900 3200 5900 2800
+Wire Wire Line
+	5700 2900 5700 3200
+Wire Wire Line
+	5700 2450 5700 2800
+Wire Wire Line
+	6100 2450 5700 2450
+Wire Wire Line
+	6100 2150 6100 2450
+Wire Wire Line
+	5700 2050 5700 2350
+Wire Wire Line
+	5700 1950 5700 1900
+Wire Wire Line
+	5600 2800 5600 3200
+Text GLabel 6000 1650 1    50   Input ~ 0
+SCK
+Text GLabel 5700 1650 1    50   Input ~ 0
+SS
+Text GLabel 5600 1650 1    50   Input ~ 10
+5V
+Wire Wire Line
+	5500 2800 5500 3200
+Connection ~ 5500 2800
+$Comp
+L Connector_Generic:Conn_01x06 Sensor5
+U 1 1 614B1227
+P 5700 1700
+F 0 "Sensor5" V 5664 1312 50  0000 R CNN
+F 1 "Sensor 4" V 5573 1312 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Horizontal" H 5700 1700 50  0001 C CNN
+F 3 "~" H 5700 1700 50  0001 C CNN
+	1    5700 1700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 Sensor7
+U 1 1 614AFC7C
+P 5700 2600
+F 0 "Sensor7" V 5664 2212 50  0000 R CNN
+F 1 "Sensor 2" V 5573 2212 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Horizontal" H 5700 2600 50  0001 C CNN
+F 3 "~" H 5700 2600 50  0001 C CNN
+	1    5700 2600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 Sensor8
+U 1 1 614A9A3C
+P 5700 3000
+F 0 "Sensor8" V 5664 2612 50  0000 R CNN
+F 1 "Sensor 1" V 5573 2612 50  0000 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x06_P2.00mm_Horizontal" H 5700 3000 50  0001 C CNN
+F 3 "~" H 5700 3000 50  0001 C CNN
+	1    5700 3000
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5800 3200
+Connection ~ 5900 3200
+Connection ~ 5500 3200
+Wire Wire Line
+	5500 3200 5500 3350
+Wire Wire Line
+	5800 3200 5800 3500
+Wire Wire Line
+	4450 2050 5100 2050
+Wire Wire Line
+	5100 2050 5100 1350
+$Comp
+L Connector_Generic:Conn_01x08 J1
+U 1 1 613B3D0C
+P 4650 2850
+F 0 "J1" H 4730 2842 50  0001 L CNN
+F 1 "Conn_01x08" H 4730 2751 50  0001 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 4650 2850 50  0001 C CNN
+F 3 "~" H 4650 2850 50  0001 C CNN
+	1    4650 2850
+	1    0    0    -1  
+$EndComp
+Text Label 4600 4150 0    50   ~ 10
+A15
+Text Label 4600 4050 0    50   ~ 10
+A14
+Text Label 4600 3950 0    50   ~ 10
+A13
+Text Label 4600 3850 0    50   ~ 10
+A12
+Text Label 4600 3750 0    50   ~ 10
+A11
+Text Label 4600 3650 0    50   ~ 10
+A10
+Text Label 4600 3550 0    50   ~ 10
+A9
+Text Label 4600 3450 0    50   ~ 10
+A8
+Text Label 4600 3250 0    50   ~ 10
+A7
+Text Label 4600 3150 0    50   ~ 10
+A6
+Text Label 4600 3050 0    50   ~ 10
+A5
+Text Label 4600 2950 0    50   ~ 10
+A4
+Text Label 4600 2850 0    50   ~ 10
+A3
+Text Label 4600 2750 0    50   ~ 10
+A2
+Text Label 4600 2650 0    50   ~ 10
+A1
+Text Label 4600 2550 0    50   ~ 10
+A0
+Text GLabel 4700 2350 2    50   Input ~ 10
+Vin
+Text GLabel 4700 2250 2    50   Input ~ 10
+GND
+Text GLabel 4700 2150 2    50   Input ~ 10
+GND
+Text GLabel 4700 2050 2    50   Input ~ 10
+5V
+Text GLabel 4700 1950 2    50   Input ~ 10
+3.3V
+$Comp
+L Connector_Generic:Conn_01x08 1E1
+U 1 1 613ACB5E
+P 4650 1950
+F 0 "1E1" H 4730 1942 50  0001 L CNN
+F 1 "Conn_01x08" H 4730 1851 50  0001 L CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x08_P2.00mm_Vertical" H 4650 1950 50  0001 C CNN
+F 3 "~" H 4650 1950 50  0001 C CNN
+	1    4650 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7250 1850 7250 4350
+Wire Wire Line
+	5900 4100 5100 4100
+Wire Wire Line
+	5900 3200 5900 4100
+Wire Wire Line
+	5800 3500 4950 3500
+Wire Wire Line
+	6000 3200 6000 3600
+Wire Wire Line
+	4450 2150 5100 2150
+Wire Wire Line
+	5100 2150 5100 3350
+Wire Wire Line
+	5100 3350 5500 3350
+$Comp
+L Device:R R1
+U 1 1 6157C699
+P 5600 6450
+F 0 "R1" V 5393 6450 50  0000 C CNN
+F 1 "220" V 5484 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5530 6450 50  0001 C CNN
+F 3 "~" H 5600 6450 50  0001 C CNN
+	1    5600 6450
+	0    1    1    0   
+$EndComp
+Text Label 6900 4800 3    50   ~ 10
++19nessesPinos
+$Comp
+L Device:R R2
+U 1 1 6157D3A6
+P 5000 6450
+F 0 "R2" V 4793 6450 50  0000 C CNN
+F 1 "220" V 4884 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 4930 6450 50  0001 C CNN
+F 3 "~" H 5000 6450 50  0001 C CNN
+	1    5000 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED RED1
+U 1 1 6153A8CC
+P 4850 6300
+F 0 "RED1" H 4843 6517 50  0000 C CNN
+F 1 "LED" H 4843 6426 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 4850 6300 50  0001 C CNN
+F 3 "~" H 4850 6300 50  0001 C CNN
+	1    4850 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED BLUE1
+U 1 1 61539E58
+P 5450 6300
+F 0 "BLUE1" H 5443 6517 50  0000 C CNN
+F 1 "LED" H 5443 6426 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 5450 6300 50  0001 C CNN
+F 3 "~" H 5450 6300 50  0001 C CNN
+	1    5450 6300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 61613A4A
+P 6150 6450
+F 0 "R3" V 5943 6450 50  0000 C CNN
+F 1 "220" V 6034 6450 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 6080 6450 50  0001 C CNN
+F 3 "~" H 6150 6450 50  0001 C CNN
+	1    6150 6450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED BLUE2
+U 1 1 61613A51
+P 6000 6300
+F 0 "BLUE2" H 5993 6517 50  0000 C CNN
+F 1 "LED" H 5993 6426 50  0000 C CNN
+F 2 "LED_THT:LED_D5.0mm" H 6000 6300 50  0001 C CNN
+F 3 "~" H 6000 6300 50  0001 C CNN
+	1    6000 6300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5450 6150
+Wire Wire Line
+	5450 6150 6000 6150
+Wire Wire Line
+	5000 3600 6000 3600
+Text Label 6650 5150 0    50   ~ 0
+5V
+Text Label 6650 4800 0    50   ~ 0
+5V
+Wire Wire Line
+	4850 6150 4900 6150
+Wire Wire Line
+	4900 5250 4900 6150
+Connection ~ 4900 6150
+Wire Wire Line
+	4900 6150 5450 6150
+Wire Wire Line
+	5150 6450 5150 5350
+Wire Wire Line
+	5150 5350 5300 5350
+Wire Wire Line
+	5300 5350 5300 5250
+Wire Wire Line
+	5750 5450 5600 5450
+Wire Wire Line
+	5600 5450 5600 5250
+Wire Wire Line
+	5750 5450 5750 6450
+Wire Wire Line
+	6300 6450 6300 5350
+Wire Wire Line
+	6300 5350 6100 5350
+Wire Wire Line
+	6100 5350 6100 5250
+Wire Wire Line
+	4950 5200 5000 5200
+$Comp
+L Connector_Generic:Conn_02x18_Odd_Even B1
+U 1 1 613D6814
+P 5800 5050
+F 0 "B1" V 5804 4063 50  0001 R CNN
+F 1 "Conn_02x18_Odd_Even" V 5895 4063 50  0001 R CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x18_P2.00mm_Vertical" H 5800 5050 50  0001 C CNN
+F 3 "~" H 5800 5050 50  0001 C CNN
+	1    5800 5050
+	0    1    -1   0   
+$EndComp
+Wire Wire Line
+	6600 4100 6600 4750
+Wire Wire Line
+	5000 4750 5000 3600
+Wire Wire Line
+	4950 3500 4950 5200
+Wire Wire Line
+	4950 5250 5000 5250
+Connection ~ 4950 5200
+Wire Wire Line
+	4950 5200 4950 5250
+Wire Wire Line
+	5100 4100 5100 4700
+Wire Wire Line
+	5100 4700 5050 4700
+Wire Wire Line
+	5050 4700 5050 5250
+Wire Wire Line
+	5050 5250 5100 5250
+$EndSCHEMATC
